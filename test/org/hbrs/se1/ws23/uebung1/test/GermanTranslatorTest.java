@@ -43,4 +43,10 @@ class GermanTranslatorTest {
         String value = translator.translateNumber(-10);
         assertEquals(value, "Übersetzung der Zahl -10 nicht möglich (1.0)");
     }
+    @Test
+    void aNegativTest6() {
+        GermanTranslator translator = new GermanTranslator();
+        String value = translator.translateNumber(-100);
+        assertEquals(value, "Übersetzung der Zahl -100 nicht möglich (1.0)");
+    }
 }
