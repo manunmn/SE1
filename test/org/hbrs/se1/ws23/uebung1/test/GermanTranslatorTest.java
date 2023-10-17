@@ -8,7 +8,7 @@ import static org.junit.jupiter.api.Assertions.*;
 class GermanTranslatorTest {
 
     @Test
-    void aPositiveTest0() {
+    void aNegativTest0() {
         GermanTranslator translator = new GermanTranslator();
         String value = translator.translateNumber(0);
         assertEquals(value, "Übersetzung der Zahl 0 nicht möglich (1.0)");
@@ -32,13 +32,13 @@ class GermanTranslatorTest {
         assertEquals(value, "zehn");
     }
     @Test
-    void aPositiveTest4() {
+    void aNegativeTest4() {
         GermanTranslator translator = new GermanTranslator();
         String value = translator.translateNumber(11);
         assertEquals(value, "Übersetzung der Zahl 11 nicht möglich (1.0)");
     }
     @Test
-    void aPositiveTest5() {
+    void aNegativTest5() {
         GermanTranslator translator = new GermanTranslator();
         String value = translator.translateNumber(-10);
         assertEquals(value, "Übersetzung der Zahl -10 nicht möglich (1.0)");
